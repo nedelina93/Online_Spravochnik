@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Online_Spravochnik.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 194px;
+            height: 204px;
+        }
+        .newStyle2 {
+            background-image: url('/Pictures/fon1.jpg');
+            background-repeat: repeat;
+        }
+    </style>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="newStyle2">
+    <form id="form1" runat="server">
+    <div>     
+            <p>
+                <img alt="Logo" class="auto-style1" longdesc="http://localhost:51797/Pictures/spravochnik2.png" src="Pictures/spravochnik2.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <marquee direction="up">
+                <asp:Label ID="Label1" runat="server" Text="КАНДИДАТ-СТУДЕНТСКИ СПРАВОЧНИК" color="blue" Font-Size="XX-Large"
+                                       meta:resourcekey="Label1Resource2">
+                </asp:Label></marquee>
+
+                &nbsp;&nbsp; <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Verdana" Font-Size="Large" ForeColor="#003399" StaticSubMenuIndent="10px" Orientation="Horizontal">
+                <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#E3EAEB" />
+                <DynamicSelectedStyle BackColor="#1C5E55" />
+                <Items>
+                    <asp:MenuItem Text="Начало" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Кандидатстване" Value="Application" NavigateUrl="~/Application.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Класиране" Value="Classifying" NavigateUrl="~/Classifying.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Изпити" Value="Exams" NavigateUrl="~/Exams.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Обща информация" Value="Information" NavigateUrl="~/Information.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Специалности" Value="Specialties" NavigateUrl="~/Specialties.aspx"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Contacts.aspx" Text="Контакти" Value="Contacts"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#1C5E55" />
+            </asp:Menu>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;
+                </p>
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+   
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

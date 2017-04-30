@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Home.aspx" title="Начало"  description="Home">
+        <siteMapNode url="~/Application.aspx" title="Кандидатстване"  description="Application" />
+        <siteMapNode url="~/Classifying.aspx" title="Класиране"  description="Classifying" />
+      <siteMapNode url="~/~/Contacts.aspx" title="Контакти"  description="Contacts" />
+      <siteMapNode url="~/Exams.aspx" title="Изпити"  description="Exams" />
+      <siteMapNode url="~/Information.aspx" title="Информация"  description="Information" />
+      <siteMapNode url="~/Specialties.aspx" title="Специалности"  description="Specialties" />
+    </siteMapNode>
+</siteMap>
